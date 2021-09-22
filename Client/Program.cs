@@ -12,7 +12,7 @@ namespace Client
             customStack.Notify += DisplayMessage<int>;
             customStack.Push(10, 302, 8, 10);
             customStack.Push(10);
-            Console.WriteLine(customStack.Peek + "\n");
+            Console.WriteLine(customStack.Peek() + "\n");
             Console.WriteLine(customStack.Pop() + "\n");
 
             var arrayFromCustomStack = customStack.ToArray();

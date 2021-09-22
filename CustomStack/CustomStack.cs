@@ -36,7 +36,7 @@ namespace CustomStack
         /// <summary>
         /// Returns (without removing) the object from start of the Stack
         /// </summary>
-        public T Peek => _head.Data;
+        public T Peek() => _head.Data;
 
         public CustomStack() { }
 
@@ -97,8 +97,7 @@ namespace CustomStack
             var node = _head;
 
             if (node == null)
-                throw new InvalidOperationException(nameof(node),
-                    new Exception("The stack is empty"));
+                throw new InvalidOperationException("The stack is empty");
 
             if (node.Next == node)
                 _head = null;
@@ -190,6 +189,7 @@ namespace CustomStack
                     return Current;
                 }
             }
+
             public StackEnumerator(CustomStack<T> Stack)
             {
                 _stack = Stack;

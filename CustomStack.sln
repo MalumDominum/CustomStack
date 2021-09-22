@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomStack", "CustomQueue\CustomStack.csproj", "{ED0758E5-3D87-4EB2-B952-693459D44892}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomStack", "CustomStack\CustomStack.csproj", "{ED0758E5-3D87-4EB2-B952-693459D44892}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{59BA6189-E0FD-4845-9690-4655BF98424A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomStack.Tests", "CustomStack.Tests\CustomQueue.Tests\CustomStack.Tests.csproj", "{A5C58232-483C-45F8-A14E-F0C564D023FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{59BA6189-E0FD-4845-9690-4655BF98424A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59BA6189-E0FD-4845-9690-4655BF98424A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59BA6189-E0FD-4845-9690-4655BF98424A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C58232-483C-45F8-A14E-F0C564D023FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C58232-483C-45F8-A14E-F0C564D023FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C58232-483C-45F8-A14E-F0C564D023FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C58232-483C-45F8-A14E-F0C564D023FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
