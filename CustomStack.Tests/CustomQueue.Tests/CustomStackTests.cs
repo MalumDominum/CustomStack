@@ -79,24 +79,20 @@ namespace CustomStack.Tests
         public void Contains_CheckStackForElement3_False(int[] initial)
         {
             var stack = new CustomStack<int>(initial.ToArray());
-            const bool expectedResult = false;
 
             var actualResult = stack.Contains(3);
 
-            Assert.AreEqual(expectedResult, actualResult,
-                "Stack does not contain element 3");
+            Assert.IsFalse(actualResult, "Stack does not contain element 3");
         }
 
         [Test]
         public void Contains_CheckStack258ForElement2_True()
         {
             var stack = new CustomStack<int>(new List<int> { 2, 5, 8 });
-            const bool expectedResult = true;
 
             var actualResult = stack.Contains(2);
 
-            Assert.AreEqual(expectedResult, actualResult,
-                "Stack {2, 5, 8} contains element 2");
+            Assert.IsTrue(actualResult, "Stack {2, 5, 8} contains element 2");
         }
 
         [TestCase(new int[0])]
